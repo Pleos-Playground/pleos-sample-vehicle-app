@@ -45,7 +45,7 @@ Vehicle Service `2.3.19`. Images show the actual app region cropped from the
 Door offers three grouped features. Searching narrows the cards without changing
 the domain's total. The same compact app bar remains visible in the dashboard.
 
-![Feature catalog with Door showing three features](https://gitlab.42dot.ai/sdv/sdk/connect-dev-app/vehicle-test-app/-/raw/main/docs/images/ux-feature-catalog.png)
+![Feature catalog with Door showing three features](docs/images/ux-feature-catalog.png)
 
 ### Persistent domains, left Back and discrete controls
 
@@ -53,7 +53,7 @@ The app bar and domain list keep their positions in the dashboard. Door Position
 `0..1` range becomes Closed/Open choices. The bottom Activity dock is fixed at
 128dp on this wide layout while the controls above it scroll independently.
 
-![Door Position with retained domains and compact fixed Activity](https://gitlab.42dot.ai/sdv/sdk/connect-dev-app/vehicle-test-app/-/raw/main/docs/images/ux-door-position.png)
+![Door Position with retained domains and compact fixed Activity](docs/images/ux-door-position.png)
 
 ### Expanded API results
 
@@ -62,7 +62,7 @@ Each API shows its latest result; the expanded content has its own scroll.
 Invoking an API brings its result into view within the dock without moving the
 control pane or taking input focus.
 
-![Expanded API Activity with complete method names and responses](https://gitlab.42dot.ai/sdv/sdk/connect-dev-app/vehicle-test-app/-/raw/main/docs/images/ux-activity-expanded.png)
+![Expanded API Activity with complete method names and responses](docs/images/ux-activity-expanded.png)
 
 ### Boolean input and visible failures
 
@@ -71,7 +71,7 @@ This AVD rejected the Door Lock read for `ROW_1_LEFT`, so the actual error and
 Failed activity status are retained in the screenshot. No Door Lock write is
 claimed or shown as successful.
 
-![Door Lock switch and the actual unsupported-area read error](https://gitlab.42dot.ai/sdv/sdk/connect-dev-app/vehicle-test-app/-/raw/main/docs/images/ux-boolean-control.png)
+![Door Lock switch and the actual unsupported-area read error](docs/images/ux-boolean-control.png)
 
 ### Real capability range, slider and exact input
 
@@ -80,7 +80,7 @@ a draft of 5 selected with the slider; the last read remains 0. The +/- buttons
 and direct numeric entry share the same bounds. Areas without reported bounds
 show numeric entry without a guessed slider range.
 
-![Window Position with actual 0 to 10 bounds and a draft value of five](https://gitlab.42dot.ai/sdv/sdk/connect-dev-app/vehicle-test-app/-/raw/main/docs/images/ux-range-control.png)
+![Window Position with actual 0 to 10 bounds and a draft value of five](docs/images/ux-range-control.png)
 
 During verification, Door Position SET=1 completed, but an explicit follow-up
 read still returned 0. This confirms request completion and separate read behavior,
