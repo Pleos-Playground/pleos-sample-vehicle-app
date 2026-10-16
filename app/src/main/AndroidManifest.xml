@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Public read permissions (Vehicle Service protectionLevel="normal"). -->
+    <uses-permission android:name="pleos.car.permission.CAR_CLIMATE" />
+    <uses-permission android:name="pleos.car.permission.CAR_CONNECT_VENDOR_CONTROL" />
+    <uses-permission android:name="pleos.car.permission.CAR_DOORS" />
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />
+    <uses-permission android:name="pleos.car.permission.CAR_ENERGY" />
+    <uses-permission android:name="pleos.car.permission.CAR_INFO" />
+    <uses-permission android:name="pleos.car.permission.CAR_LIGHTS" />
+    <uses-permission android:name="pleos.car.permission.CAR_MILEAGE" />
+    <uses-permission android:name="pleos.car.permission.CAR_MIRRORS" />
+    <uses-permission android:name="pleos.car.permission.CAR_POWERTRAIN" />
+    <uses-permission android:name="pleos.car.permission.CAR_SAFETY" />
+    <uses-permission android:name="pleos.car.permission.CAR_SEATS" />
+    <uses-permission android:name="pleos.car.permission.CAR_SPEED" />
+    <uses-permission android:name="pleos.car.permission.CAR_TOLL" />
+    <uses-permission android:name="pleos.car.permission.CAR_TIRES" />
+    <uses-permission android:name="pleos.car.permission.CAR_WINDOWS" />
+
+    <!-- Public control permissions (Vehicle Service protectionLevel="normal"). -->
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_CLIMATE" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_DOORS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_DRIVE" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_ENERGY" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_INFO" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_LIGHTS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_MIRRORS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_SAFETY" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_SEATS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_TOLL" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_WINDOWS" />
+    <uses-permission android:name="pleos.car.permission.READ_CAR_DISPLAY_UNITS" />
+    <uses-permission android:name="pleos.car.permission.READ_CAR_STEERING" />
+    <uses-permission android:name="pleos.car.permission.READ_ADAS_STATES" />
+    <uses-permission android:name="pleos.car.permission.READ_WINDSHIELD_WIPERS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_WINDSHIELD_WIPERS" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VehicleSampleApp">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.VehicleSampleApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
