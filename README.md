@@ -104,7 +104,7 @@ The repository already includes the Pleos Maven repository and dependency:
 
 ```kotlin
 repositories {
-    maven("https://nexus.crp.developers.umos.ai/repository/maven-releases/")
+    maven("https://nexus-playground.pleos.ai/repository/maven-releases/")
 }
 
 dependencies {
