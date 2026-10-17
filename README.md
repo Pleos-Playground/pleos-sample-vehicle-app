@@ -1,6 +1,6 @@
 # Pleos Vehicle SDK Android Sample
 
-An Android sample for integrating the Pleos Vehicle SDK `2.3.0`.
+An Android sample for integrating the Pleos Vehicle SDK `2.3.2`.
 The Door Position flow is the official, typed SDK reference in this repository.
 The in-app API catalog is a companion screen for discovering public method names,
 parameters, and operation order before writing application code.
@@ -36,8 +36,8 @@ directly as shown below.
 
 ## Screenshots
 
-Captured on `Pleos_Connect_v2.0` (Android 14), using Vehicle SDK `2.3.0` and
-Vehicle Service `2.3.19`. Images show the actual app region cropped from the
+Captured on `Pleos_Connect_v2.1` (Android 14), using Vehicle SDK `2.3.2` and
+Vehicle Service `2.3.22`. Images show the actual app region cropped from the
 2560 x 1440 AVD display, not the HTML prototype.
 
 ### Domain counts and feature browsing
@@ -93,7 +93,7 @@ read was 0; no test subscriptions were left running.
 - JDK 17
 - Android 6.0 (API 23) or later
 - A Pleos device or emulator containing a compatible Vehicle Service
-- Vehicle SDK `2.3.0`
+- Vehicle SDK `2.3.2`
 
 The app cannot exercise vehicle properties on a standard Android phone image because
 Pleos Vehicle Service is not available there.
@@ -108,7 +108,7 @@ repositories {
 }
 
 dependencies {
-    implementation("ai.pleos.playground:Vehicle:2.3.0")
+    implementation("ai.pleos.playground:Vehicle:2.3.2")
 }
 ```
 
@@ -131,7 +131,7 @@ MainActivity
             ├── VehicleClient
             │       └── DoorPositionRequests (typed Door integration)
             └── VehicleApiExplorer (public catalog and reflection calls)
-                    └── Vehicle SDK 2.3.0 / Vehicle Service
+                    └── Vehicle SDK 2.3.2 / Vehicle Service
 ```
 
 - `MainActivity` hosts Compose and forwards UI actions.
@@ -380,5 +380,5 @@ editors, numeric validation, actual capability-bound extraction, selected Door
 areas, listener cleanup, and separate SET/read behavior.
 
 Known existing test mismatch: `PublicApiPolicyTest` still pins the SDK `2.2.10`
-catalog to 441 methods, while the current `2.3.0` dependency exposes 442. That
+catalog to 441 methods, while the current `2.3.2` dependency exposes 442. That
 assertion is not skipped or relaxed; it remains a failure in the full unit suite.
